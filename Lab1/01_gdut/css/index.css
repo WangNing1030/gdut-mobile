@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.word {
+    text-align: center;
+    text-decoration: underline;
+    font: normal bold 32px 宋体,"Microsoft YaHei",sans-serif;
+    color: #002060;
+}
+
+.word>.zhonghua {
+    color: #ff0000;
+}
+
+.word>.dadi {
+    color: #00b0f0;
+}
+
+.word>.zhimei {
+    color: #c45911;
+}
+
+.word>.shier1 {
+    color: #c00000;
+}
+
+.word>.wenwan {
+    color: #00b050;
+}
+
+.word>.qingxin {
+    color: #92d050;
+}
+
+.word>.shier2 {
+    color: #1f4179;
+}
+
+.image_land {
+    width: auto;
+    height: 100%;
+    text-align: center;
+}
+
+.land {
+    border: 10px dashed skyblue;
+}
+
+.link_a {
+    height: 40px;
+    text-align: center;
+}
+
+.link_a>a {
+        text-align: center;
+        font-size: 32px;
+        font-family: 宋体;
+        /* text-decoration: none; */
+        color: purple;
+}
+
+
+table.poem {
+    font: normal bold 32px 宋体,"Microsoft YaHei",sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: skyblue;
+}

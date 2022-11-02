@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 倒计时5s跳转至广东工业大学主页 -->
+    <meta http-equiv="refresh" content="5;url=https://www.gdut.edu.cn/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="tom.ico" type="image/x-icon">
+    <title>理塘</title>
+
+    <style>
+        .home-title,p {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        var time = 4;
+        // 每隔1秒调用1次 refer()
+        setInterval("refer()",1000);
+        function refer() {
+            if (time == 0) {
+                // 等同于 refresh 倒计时5s跳转至广东工业大学主页
+                // location="https://www.gdut.edu.cn/";
+            } else {
+                document.getElementById('gdut').innerHTML="将在" + time +"秒后跳转到广东工业大学主页......";
+                time--;
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1 class="home-title">介绍家乡的主页</h1>
+
+    <p id="gdut">将在5秒后跳转到广东工业大学主页......</p>
+
+</body>
+</html>
