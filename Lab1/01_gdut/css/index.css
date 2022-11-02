@@ -12,30 +12,37 @@
 
 .word>.zhonghua {
     color: #ff0000;
+    text-shadow: 7px 1px 5px #ff0000;
 }
 
 .word>.dadi {
     color: #00b0f0;
+    text-shadow: 7px 1px 5px #00b0f0;
 }
 
 .word>.zhimei {
     color: #c45911;
+    text-shadow: 7px 1px 5px #c45911;
 }
 
 .word>.shier1 {
     color: #c00000;
+    text-shadow: 7px 1px 5px #c00000;
 }
 
 .word>.wenwan {
     color: #00b050;
+    text-shadow: 7px 1px 5px #00b050;
 }
 
 .word>.qingxin {
     color: #92d050;
+    text-shadow: 7px 1px 5px #92d050;
 }
 
 .word>.shier2 {
     color: #1f4179;
+    text-shadow: 7px 1px 5px #1f4179;
 }
 
 .image_land {
