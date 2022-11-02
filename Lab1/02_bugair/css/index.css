@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 清除浮动：双伪元素清除 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* 版心公共类 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bugari {
+    text-align: center;
+    color: #00b0f0;
+    font: normal normal 32px 宋体,"Microsoft YaHei",sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    /* 清除浮动：给父元素设置高度 */
+    /* height: 300px; */
+}
+
+ul li {
+    float: left;
+    width: 25%;
+    margin-bottom: 50px;
+}
+
+.introduce {
+
+
+
+    /* 背景图片不能撑开盒子，需要设置宽高 */
+    height: 679px;
+    background-image: url(../image/HuangShanMountain.jpg);
+
+    border-radius: 50%;
+
+    margin-bottom: 50px;
+}
+
+.p-image {
+    /* margin折叠———塌陷现象：给父元素设置 */
+    overflow: hidden;
+}
+
+/* div不设高度由img撑开存在额外间隙 */
+.p-image>img {
+    /* 改变img标签的垂直对齐方式不为baseline即可 */
+    /* vertical-align: bottom; */
+
+    /* 设置img转换成块级元素 */
+    display: block;
+
+    margin: 30px auto;
+
+    border-radius: 20%;
+}
+
+.text {
+    width: 537px;
+    height: 80px;
+    margin: 0 auto;
+    border: 8px dotted white;
+    border-radius: 10%;
+    text-align: center;
+    font: normal normal 32px 宋体,"Microsoft YaHei",sans-serif;
+    color: red;
+}
+/* TODO: 加在上面浏览器不加载？ */
+.text {
+    line-height: 80px;
+}
+
+/* 增加诗句垂直方向的距离 */
+.introduce .text:nth-child(3) {
+    /* background-color: red; */
+
+    margin-top: 20px;
+}
+
+.link-a {
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+    font: normal normal 32px 宋体,"Microsoft YaHei",sans-serif;
+}
+
+.link-a a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    color: red;
+}
+
