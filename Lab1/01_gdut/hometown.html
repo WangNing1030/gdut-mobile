@@ -23,6 +23,8 @@
             if (time == 0) {
                 // 等同于 refresh 倒计时5s跳转至广东工业大学主页
                 // location="https://www.gdut.edu.cn/";
+                document.getElementById('gdut').innerHTML="正在跳转……若跳转失败请点击" + "<a href=\"https://www.gdut.edu.cn/\">广东工业大学主页</a>";
+
             } else {
                 document.getElementById('gdut').innerHTML="将在" + time +"秒后跳转到广东工业大学主页......";
                 time--;
