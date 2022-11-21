@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置视图窗口背景图片 */
+body {
+    /*加载背景图：图片地址 不平铺 居中 */
+    background: url("../image/warma.png") no-repeat center center;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    /* 基于视图固定 */
+    background-attachment: fixed;
+}
+
+/* form表单定位 */
+#form-register {
+	width:600px;
+	position: absolute;
+ 	left: 5%;
+    /* 没贴背景图片 */
+    background-color: pink;
+}
+
+/* 表单标题居中 */
+h2{
+	text-align: center;
+	margin: 16px auto;
+}
+
+p{
+	margin-top: 20px;
+}
+
+/* input前的span右对齐，并间接使input左对齐 */
+p span{
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+	padding-right: 10px;
+}
+
+/* input统一宽高 */
+p input{
+	width:200px;
+	height:18px;
+	border:1px solid #28a1bf;
+	padding:2px;
+}
+
+/* 单选框单独设置 */
+p input#gender {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* 单选框单独设置 */
+p input#gender {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* 多选框单独设置 */
+p input#lan {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* textarea 设置 */
+textarea.message {
+    /* 禁止拉伸 textarea */
+    resize: none;
+    /* textarea 前的文字设置为左上角 */
+    vertical-align:top;
+}
+
+/* 提交，重置 样式设置 */
+.buttom input{
+	width: 100px;
+	height: 30px;
+	background-color: skyblue;
+	margin-top:16px;
+	margin-left:75px;
+	border-radius:5px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	color:#000;
+}
+
+/* 当鼠标悬停时 buttom input 变色 */
+.buttom input:hover {
+    background-color: yellow;
+}
+/* 当鼠标点击时 buttom input 变色 */
+.buttom input:active {
+    background-color: red;
+}

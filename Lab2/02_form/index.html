@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/city.js"></script>
+</head>
+<body>
+
+    <!-- form提交地址为action -->
+    <form action="https://www.bilibili.com/" method="get" name="form_register" id="form-register">
+        <h2>用户注册表</h2>
+        <p>
+            <span>账号：</span>
+            <input type="text" name="username" required>（必须填写）
+        </p>
+        <p>
+            <span>密码：</span>
+            <input type="password" name="password" placeholder="请输入密码" required>（必须填写）
+        </p>
+        <p>
+            <span>姓名：</span>
+            <input type="text" name="name" placeholder="请输入姓名" required>（必须填写）
+        </p>
+        <p>
+            <span>性别：</span>
+            <label>
+                <input type="radio" name="gender" value="男" id="gender" checked>男
+              </label>
+            <label>
+                <input type="radio" name="gender" value="女" id="gender">女
+            </label>
+        </p>
+        <p>
+            <span>毕业院校：</span>
+            <input type="text" placeholder="请填写毕业院校" class="college" >
+        </p>
+        <p>
+            <span>编程语言：</span>
+            <label>
+                <input type="checkbox" name="pro_lan" value="C++" id="lan" checked>C++
+            </label>
+            <label>
+                <input type="checkbox" name="pro_lan" value="Java" id="lan" checked>Java
+            </label>
+            <label>
+                <input type="checkbox" name="pro_lan" value="Python" id="lan">Python
+            </label>
+            <label>
+                <input type="checkbox" name="pro_lan" value="TypeScript" id="lan">TypeScript
+            </label>
+        </p>
+        <p>
+            <span>省：</span>
+            <select name="province" onchange="changecity()" >
+                <option selected>-请选择-</option>
+                <option value="江苏省">江苏省</option>
+                <option value="北京">北京</option>
+                <option value="天津">天津</option>
+                <option value="上海">上海</option>
+                <option value="重庆">重庆</option>
+                <option value="广东省">广东省</option>
+                <option value="浙江省">浙江省</option>
+                <option value="福建省">福建省</option>
+                <option value="湖南省">湖南省</option>
+                <option value="湖北省">湖北省</option>
+                <option value="山东省">山东省</option>
+                <option value="辽宁省">辽宁省</option>
+                <option value="吉林省">吉林省</option>
+                <option value="云南省">云南省</option>
+                <option value="四川省">四川省</option>
+                <option value="安徽省">安徽省</option>
+                <option value="江西省">江西省</option>
+                <option value="黑龙江省">黑龙江省</option>
+                <option value="河北省">河北省</option>
+                <option value="陕西省">陕西省</option>
+                <option value="海南省">海南省</option>
+                <option value="河南省">河南省</option>
+                <option value="山西省">山西省</option>
+                <option value="内蒙古">内蒙古</option>
+                <option value="广西">广西</option>
+                <option value="贵州省">贵州省</option>
+                <option value="宁夏">宁夏</option>
+                <option value="青海省">青海省</option>
+                <option value="新疆">新疆</option>
+                <option value="西藏">西藏</option>
+                <option value="甘肃省">甘肃省</option>
+                <option value="台湾省">台湾省</option>
+                <option value="香港">香港</option>
+                <option value="澳门">澳门</option>
+                <option value="国外">国外</option>
+            </select>
+            <span>城市：</span>
+            <select name="city" style="width:80">
+            <option>==城市==</option>
+            </select>
+            </p>
+        <p>
+            <!-- 没有写根据出生日期计算年龄的js函数，待优化 -->
+            <span>真实年龄：</span>
+            <input type="number" name="realage" value="20" min="6" max="100" required/>（必须填写）
+        </p>
+        <p>
+            <span>出生日期：</span>
+            <input type="date" name="birthday" value="2022-11-22" required/>（必须填写）
+        </p>
+        <p>
+            <span>电子邮箱：</span>
+            <input type="email" name="myemail" placeholder="myemail@gmail.com" required multiple/>（必须填写）
+        </p>
+        <p>
+            <span>身份证号：</span>
+            <input type="text" name="card" required pattern="^\d{8,18}|[0,9x]{8,18}|[0-9X]{8,18}?$"/>
+            <br>（必须填写，能够以数字，字母x结尾的短身份证号）
+        </p>
+        <p>
+            <span>手机号码：</span>
+            <input type="tel" name="telphone" pattern="^\d{11}$" required/>（必须填写）
+        </p>
+        <p>
+            <span>备注：</span>
+            <textarea placeholder="请简述您在计算机行业从事的经历" cols="50" rows="5" class="message"></textarea>
+        </p>
+        <p class="buttom">
+            <input type="submit" value="提交"/>
+            <input type="reset" value="重置"/>
+        </p>
+    </form>
+
+</body>
+</html>
