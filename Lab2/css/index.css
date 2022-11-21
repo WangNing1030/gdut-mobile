@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* div不设高度由img撑开存在额外间隙 */
+div>img {
+    vertical-align: bottom;
+    /* display: block; */
+}
+
+/* 版心公共类 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 清除浮动 -- 给.clearfix::before，可以避免外边距塌陷问题 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* p段落标签首行缩进2个字 */
+p {
+    text-indent: 2em;
+}
+
+.header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.nav li {
+    float: left;
+    margin-top: 10px;
+    width: 25%;
+    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 结构伪类选择器 -- 指定背景图片 */
+.nav li:nth-child(1) {
+    background: url("../image/nav-1-Diana.jpg");;
+}
+.nav li:nth-child(2) {
+    background: url("../image/nav-2-Queen.jpg");;
+}
+.nav li:nth-child(3) {
+    background: url("../image/nav-3-Ava.jpg");;
+}
+.nav li:nth-child(4) {
+    background: url("../image/nav-4-Bella.jpg");;
+}
+
+/* nav中前3个li的去掉右border，去重 */
+.nav li:nth-child(-n+3) {
+    border-right: 0;
+}
+
+.nav a {
+    display: block;
+    color: red;
+    font: normal normal 32px 宋体,"Microsoft YaHei",sans-serif;
+}
+
+.nav a:link {
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    height: 300px;
+    color: skyblue;
+    text-decoration: none;
+}
+
+/* 链接伪类选择器 -- 当鼠标悬停时更改背景图片 */
+.nav li:nth-child(1) a:hover {
+    background: url("../image/nav-1-jiaran.jpg");;
+}
+.nav li:nth-child(2) a:hover {
+    background: url("../image/nav-2-nailin.jpg");;
+}
+.nav li:nth-child(3) a:hover {
+    background: url("../image/nav-3-xiangwan.jpg");;
+}
+.nav li:nth-child(4) a:hover {
+    background: url("../image/nav-4-beila.jpg");;
+}
+
+.image-1 {
+    margin: 32px auto;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.poem {
+    margin-left: 32px;
+    margin-top: 16px;
+}
