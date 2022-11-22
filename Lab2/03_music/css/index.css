@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 大盒子设置背景图片，水平居中 */
+.music-box {
+	width: 610px;
+	height: 481px;
+	margin: 100px auto;
+	background: url("../image/bg-music.jpg") no-repeat;
+	padding-right:70px;
+}
+
+/* -------------- 左半 -------------- */
+/* 定位 - 子绝父相 将4个图片定位 */
+.left {
+	width: 332px;
+	height: 400px;
+	float: left;
+	position: relative;    /*将父元素设置为相对定位*/
+}
+
+.one {
+	width: 110px;
+	height: 110px;
+	background: url("../image/icon4.png") no-repeat;
+	position: absolute;   /*将子元素设置为绝对定位*/
+	top: 75px;
+}
+
+.two {
+	width: 98px;
+	height: 98px;
+	background: url("../image/icon3.png") no-repeat;
+	position: absolute;   /*将子元素设置为绝对定位*/
+	left: 175px;
+	top: 375px;
+}
+
+.three {
+	width: 78px;
+	height: 78px;
+	background: url("../image/icon2.png") no-repeat;
+	position: absolute;   /*将子元素设置为绝对定位*/
+	left: 127px;
+	top: 17px;
+}
+
+.four {
+	width: 50px;
+	height: 50px;
+	background: url("../image/icon1.png") no-repeat;
+	position: absolute;  /*将子元素设置为绝对定位*/
+	left: 232px;
+	top: 8px;
+}
+
+/* 伪类选择器 - 修改鼠标悬浮样式*/
+.one:hover { 
+    background: url("../image/icon4-1.png") no-repeat;
+}
+
+.two:hover { 
+    background: url("../image/icon3-1.png") no-repeat;
+}
+
+.three:hover { 
+    background: url("../image/icon2-1.png") no-repeat;
+}
+
+.four:hover { 
+    background: url("../image/icon1-1.png") no-repeat;
+}
+
+/* -------------- 右半 -------------- */
+.right {
+	width: 224px;
+	height: 340px;
+	padding-top: 50px;
+	float: right;
+	font-style: italic;
+    font-family: "Microsoft YaHei Light";
+}
+
+/* 音乐h2 */
+.right h2{
+    margin-top: 20px;
+    margin-left: 30px;
+	font-size: 88px;
+	color: #3f9ade;
+}
+
+.right .txt{
+	font-size: 27px;
+	color: #55606b;
+}
+
+/* audio控件 overflow: hidden 部分 */
+.music {
+    width: 45px;
+    height: 45px;
+/*     float: right;
+    margin-right: 20px; */
+    margin: 0 auto;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+/* 设置歌词 */
+.lyric {
+    width: 224px;
+    height: 210px;
+    overflow: auto;
+    font-style: normal;
+    font-family: "楷体";
+    font-weight: bold;
+}
+
+/* 设置介绍与歌词之间的间隙 */
+.lyric p:nth-child(1) {
+    margin-bottom: 10px;
+}
