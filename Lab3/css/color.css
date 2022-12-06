@@ -1,0 +1,154 @@
+/* 设置网页统一属性 */
+body {
+    margin: 0px;
+    padding: 0;
+	font-family: Arial, Helvetica, sans-serif, 微软正黑体;
+
+    /* 设置滑鼠游标 */
+    cursor: url('../images/my.cur'), url('../images/my.png'), auto;
+    /* 设置网页背景图 */
+    background-image: url('../images/acao.jpg');
+    /* 基于视图固定 */
+    background-attachment:fixed; 
+
+}
+
+/* 主div */
+#main {
+	margin: 0 auto;
+	border: 0px #330000 solid; 
+	width: 800px;
+	height: auto;
+}
+
+/* 网页头部 */
+header {
+	border: 1px #330000 solid;
+	width: 800px;
+	height: 80px;
+	background: #330000;
+}
+
+/* 网页侧边栏 */
+aside {
+	width: 180px;
+	float: left;
+	height: 400px;
+	/* background: url('../images/A-SOUL.jpg') no-repeat; */
+    background-color: rgb(152, 102, 0)
+}
+
+.avatar > img {
+    margin: 5px auto;
+    display: block;
+    border-radius: 50%;
+}
+
+/* 导航栏 */
+nav {             
+	border: 0px #000000 solid;
+	margin: 0px auto;
+	margin-top: 15px;
+}
+
+/* 不显示列表默认样式 */
+nav ul {
+	list-style: none;   
+    margin: 0;
+    padding: 0;     
+}
+
+nav li a {
+	display: block; 
+	width: 150px; 
+	height: 42px; 
+    /* 超链接原始状态背景图 */
+	background-image: url('../images/btn.png');  
+	line-height: 42px; 
+	text-indent: 45px; 
+	text-decoration: none;
+	color: #333333;
+	font-size: 15px;
+}
+
+nav li a:hover {
+    /* 滑鼠hover到超链接时的状态背景图 */
+	background-image: url('../images/btn_hover.png'); 
+	color: #ffffff; 
+}
+
+/* 标题 */
+h1#text1{
+    margin:0px;
+    padding:0px;
+	top:15px;
+	position:absolute;     /*設定div為絕對定位*/
+	font-size:40px;       /*字高*/
+	color:#FF0000;       /*字的顏色*/
+	margin-left:50px;          /*與元件水平距離*/
+}
+
+/* 标题 */
+h1#text2{
+    margin: 0;
+	padding:5px;
+	position:absolute;
+	font-size:30px;
+	color:#FFFFFF;
+	top:30px;
+	margin-left:150px;
+	filter:glow(color=#ff0000, strength=5);   /*設定光暈濾鏡*/
+	text-shadow: 5px 5px 5px #FF0000;
+}
+
+/* 网页文章 */
+article {
+	border-right: 1px #330000 solid;
+	width: 625px;
+	margin-left: 175px;
+	height: 400px;
+	background: #FFFFFF;
+}
+
+/* 内嵌窗口内容 */
+.content {
+    border: 0px #330000 solid;
+	width: 400px;
+	left: 10px;
+    top: 10px;
+	margin: 0px auto;
+    padding: 20px;
+}
+
+fieldset{
+	border:1px solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+fieldset legend{
+	text-align:center; 
+}
+
+.content,div {
+    margin-bottom: -10px;
+}
+
+.content > img {
+	margin: 3px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 2px solid;
+}
+
+/* 网页底部 */
+footer {
+	border: 1px #330000 solid;
+	background: #330000;
+	color: #ffffff;
+	width: 800px;
+    height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
