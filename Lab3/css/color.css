@@ -134,14 +134,6 @@ fieldset legend{
     margin-bottom: -10px;
 }
 
-.content > img {
-	margin: 3px;
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	border: 2px solid;
-}
-
 /* 网页底部 */
 footer {
 	border: 1px #330000 solid;
@@ -152,3 +144,78 @@ footer {
 	text-align: center;
 	line-height: 50px;
 }
+
+/* ---------------- 走马灯样式设置 ---------------- */
+.content img {
+	margin: 3px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 2px solid;
+}
+#bg {
+	width: 200px;
+	height: 280px;
+}
+#sm {
+	/*滚动对象样式*/
+	overflow: hidden;
+	/*隐藏Div中多余的内容，增加图片会一起滚动*/
+	width: 400px;
+	height: 180px;
+}
+#sm img {
+	width: 100px;
+}
+#Pic1,
+#Pic2,
+#Pic1 table,
+#Pic2 table {
+	width: 180px;
+	height: 180px;
+}
+td {
+	vertical-align: top;
+}
+.slide p {
+	display: none;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+}
+.slide td:hover p {
+	display: inline;
+}
+#sm img {
+	margin: 0 auto;
+	width: 100px;
+	height: 75px;
+}
+
+#box {
+	position: absolute;
+	left: 850px;
+	top: 455px;
+	height: 30px;
+	/* background-color: pink; */
+}
+
+/* ---------------- 4张滚动图片 ---------------- */
+/* .marquee {
+	width: 500px;
+	height: 125px;
+	overflow: hidden;
+}
+
+.marquee ul li {
+	float: left;
+	list-style: none;   
+}
+
+.marquee img {
+	margin: 3px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 2px solid;
+} */

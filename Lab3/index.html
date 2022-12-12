@@ -7,6 +7,7 @@
     <title>共鸣未来</title>
 
     <link rel="stylesheet" href="./css/color.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -26,17 +27,9 @@
             <nav>
                 <ul>
                     <li><a href="./index.html">最新消息</a></li>
-                </ul>
-                <ul>
                     <li><a href="./pages/flash.html">flash动画</a></li>
-                </ul>
-                <ul>
                     <li><a href="./pages/movie.html">短片欣赏</a></li>
-                </ul>
-                <ul>
                     <li><a href="./pages/music.html">音乐欣赏</a></li>
-                </ul>
-                <ul>
                     <li><a href="./pages/message.html">留言板</a></li>
                 </ul>
             </nav>
@@ -60,12 +53,41 @@
                 </fieldset>
             </section>
 
+<!--             <div class="content marquee">
+                <ul>
+                    <li><img src="./uploads/jiaran.jpg" alt="A-SOUL_嘉然" width="120"><p>旺财，三岁</p></li>
+                    <li><img src="./uploads/xiangwan.jpg" alt="A-SOUL_向晚" width="120"></li>
+                    <li><img src="./uploads/nailin.jpg" alt="A-SOUL_乃琳" width="120"></li>
+                    <li><img src="./uploads/beila.jpg" alt="A-SOUL_贝拉" width="120"></li>
+                </ul>
+            </div> -->
+
+            <!-- copy的 -->
             <div class="content">
-                <img src="./uploads/jiaran.jpg" alt="A-SOUL_嘉然" width="120">
-                <img src="./uploads/xiangwan.jpg" alt="A-SOUL_向晚" width="120">
-                <img src="./uploads/nailin.jpg" alt="A-SOUL_乃琳" width="120">
-                <!-- <img src="./uploads/beila.jpg" alt="A-SOUL_贝拉" width="120"> -->
+				<div id="bg">
+					<div id="sm">
+						<!--滚动div-->
+						<table>
+							<!--外表格1x2,且第2单元格是空的-->
+							<tr>
+								<td id="Pic1">
+									<table>
+										<!--内表格1x4,存放4张图片-->
+										<tr class="slide">
+											<td><img src="./uploads/jiaran.jpg" alt="A-SOUL_嘉然"><p>嘉然Diana</p></td>
+											<td><img src="./uploads/xiangwan.jpg" alt="A-SOUL_向晚"><p>向晚Ava</p></td>
+											<td><img src="./uploads/nailin.jpg" alt="A-SOUL_乃琳"><p>乃琳Queen</p></td>
+											<td><img src="./uploads/beila.jpg" alt="A-SOUL_贝拉"><p>贝拉Bella</p></td>
+										</tr>
+									</table>
+								</td>
+								<td id="Pic2"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
             </div>
+            <div id="box"></div>
         </article>
 
         <!-- 网页底部 -->
@@ -73,5 +95,8 @@
 
     </div>
 
+    <!-- js -->
+    <script src="./js/index.js"></script>
+    
 </body>
 </html>
