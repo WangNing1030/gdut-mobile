@@ -1,0 +1,184 @@
+body {
+	margin: 0px;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: url(images/my.cur), url(images/my.png), auto;
+	background-image: url('images/背景图片.webp');
+	background-attachment: fixed;
+
+}
+
+#main {
+	margin: 0 auto;
+	border: 0px #330000 solid;
+	width: 800px;
+	height: auto;
+}
+
+header {
+	border: 1px #330000 solid;
+
+	width: 800px;
+	height: 80px;
+	background: #330000;
+}
+
+aside {
+	width: 170px;
+	float: left;
+	height: 400px;
+	background: url(images/bg_lt.png) no-repeat;
+}
+
+nav {
+	border: 0px #000000 solid;
+	margin: 0px auto;
+	padding: 0px;
+	margin-top: 170px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li a {
+	display: block;
+	width: 150px;
+	height: 42px;
+	background-image: url(images/btn.png);
+	line-height: 35px;
+	text-indent: 45px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 15px;
+}
+
+nav li a:hover {
+	background-image: url(images/btn_hover.png);
+	color: #ffffff;
+}
+
+h1#text1 {
+	margin: 0px;
+	padding: 0px;
+	top: 15px;
+	position: absolute;
+	font-size: 40px;
+	color: #FF0000;
+	margin-left: 50px;
+}
+
+h1#text2 {
+	margin: 0px;
+	padding: 5px;
+	position: absolute;
+	font-size: 30px;
+	color: #FFFFFF;
+	top: 30px;
+	margin-left: 150px;
+	filter: glow(color=#ff0000, strength=5);
+	text-shadow: 5px 5px 5px #FF0000;
+}
+
+article {
+	border-right: 1px #330000 solid;
+	width: 625px;
+	margin-left: 175px;
+	height: 400px;
+	background: #FFFFFF;
+}
+
+.consection {
+	border: 0px #330000 solid;
+	width: 450px;
+	left: 10px;
+	top: 10px;
+	margin: 0px auto;
+	padding: 10px;
+
+}
+
+#bg {
+	width: 200px;
+	height: 280px;
+}
+
+#sm {
+	/*滚动对象样式*/
+	overflow: hidden;
+	/*隐藏Div中多余的内容，增加图片会一起滚动*/
+	width: 450px;
+	height: 180px;
+}
+
+#sm img {
+	width: 100px;
+}
+
+#Pic1,
+#Pic2,
+#Pic1 table,
+#Pic2 table {
+	width: 280px;
+	height: 180px;
+}
+
+td {
+	vertical-align: top;
+}
+
+.slide p {
+	display: none;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.slide td:hover p {
+	display: inline;
+}
+
+#sm img {
+	margin: 0 auto;
+	width: 100px;
+	height: 75px;
+}
+
+#box {
+	position: absolute;
+	left: 1000px;
+	top: 400px;
+	height: 30px;
+	/* background-color: pink; */
+}
+
+fieldset {
+	border: 1px solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+fieldset legend {
+	text-align: center;
+}
+
+img {
+	margin: 3px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 2px solid;
+}
+
+footer {
+	border: 1px #330000 solid;
+	background: #330000;
+	color: #ffffff;
+	width: 800px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}

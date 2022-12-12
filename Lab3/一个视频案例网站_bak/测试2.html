@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试二</title>
+    <style>
+        .consection {
+            border: 0px #330000 solid;
+            width: 450px;
+            left: 10px;
+            top: 10px;
+            margin: 0px auto;
+            padding: 10px;
+
+        }
+
+        #bg {
+            width: 200px;
+            height: 280px;
+        }
+
+        #sm {
+            /*滚动对象样式*/
+            overflow: hidden;
+            /*隐藏Div中多余的内容，增加图片会一起滚动*/
+            width: 450px;
+            height: 180px;
+        }
+
+        #sm img {
+            width: 100px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="consection">
+        <div id="bg">
+            <div id="sm">
+                <!--滚动div-->
+                <table>
+                    <!--外表格1x2,且第2单元格是空的-->
+                    <tr>
+                        <td id="Pic1">
+                            <table>
+                                <!--内表格1x4,存放4张图片-->
+                                <tr class="slide">
+                                    <td><img src="images/puppy1.png" />
+                                        <p>旺财，三岁</p>
+                                    </td>
+                                    <td><img src="images/puppy2.png" />
+                                        <p>旺财，三岁</p>
+                                    </td>
+                                    <td><img src="images/puppy3.png" />
+                                        <p>旺财，三岁</p>
+                                    </td>
+                                    <td><img src="images/puppy4.jpg" height="75" />
+                                        <p>旺财，三岁</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="Pic2"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script>
+            Pic2.innerHTML = Pic1.innerHTML;//复制一组图片，但被隐藏
+            function scrolltoleft() {//定义向左移动的方法
+                sm.scrollLeft++;//改变层的水平坐标，实现向左移动
+                if (sm.scrollLeft >= Pic1.scrollWidth)//需要复位
+                    sm.scrollLeft = 0;//层的位置复位，浏览器窗口的宽度有限的
+            }
+
+            var MyMar = setInterval(scrolltoleft, 40); //定时器，方法名后不可加()
+
+            function mouseover(x) {//放大图片
+                x.style.width = "210";
+                x.style.height = "256"
+                x.style.cursor = "pointer"
+            }
+            function mouseout(x) {//图片复原
+                x.style.width = "105";
+                x.style.height = "128"
+            }
+
+            //两面两行是用方法响应对象的事件
+            sm.onmouseover = function () {//匿名方法（函数）
+                clearInterval(MyMar);//停止滚动
+            }
+
+            sm.onmouseout = function () {
+                MyMar = setInterval(scrolltoleft, 40);//继续滚动
+            }
+
+
+            var slide = document.querySelector('.slide');
+            var tds = slide.children;
+            for (var i = 0; i < tds.length; i++) {
+                tds[i].onmouseover = function () {
+                    this.children[1].style.display = 'block';
+                }
+                tds[i].onmouseout = function () {
+                    this.children[1].style.display = 'none';
+                }
+            }
+
+
+        </script>
+</body>
+
+</html>
